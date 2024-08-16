@@ -48,6 +48,7 @@ img {
 }
 
 .card {
+  position: relative;
   background-color: var(--clr-white);
   padding: 1rem 1rem 2.5rem 1rem;
   width: 320px;
@@ -55,6 +56,17 @@ img {
   gap: 1.25rem;
   border-radius: 1rem;
   text-align: center;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  background-color: inherit;
+  border-radius: inherit;
+  inset: 0.5rem 0 0 0;
+  filter: invert(100%) blur(1rem);
+  opacity: 0.15;
+  z-index: -1;
 }
 
 .card-image {
