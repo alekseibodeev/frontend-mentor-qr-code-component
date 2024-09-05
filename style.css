@@ -70,22 +70,22 @@ img {
   z-index: -1;
 }
 
-.card-image {
+.card__cover {
   border-radius: 0.625rem;
 }
 
-.card-content {
+.card__content {
   display: grid;
   gap: 1rem;
 }
 
-.card-title {
+.card__title {
   font-size: var(--fs-600);
   font-weight: var(--fw-bold);
   line-height: 1.2;
 }
 
-.card-description {
+.card__description {
   color: var(--clr-slate-500);
   font-size: var(--fs-300);
   font-weight: var(--fw-regular);
